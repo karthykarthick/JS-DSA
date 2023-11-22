@@ -124,4 +124,25 @@ function pattern9(n) {
   return str;
 }
 
-console.log(pattern9(5))
+
+
+function pattern10(n){
+  let str = ''
+  for(let i=0;i<n;i++){
+    //1,2,3,4,5
+    for(let j=0;j<=i;j++){
+       str+="*"
+    }
+    str+='\n'
+  }
+  
+  for(let i=n-1;i>0;i--){
+    for(let j=0;j<i;j++){
+      str+="*"
+    }
+    str+='\n'
+  }
+  return str
+}
+
+console.log(pattern10(4))
