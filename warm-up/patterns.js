@@ -145,4 +145,21 @@ function pattern10(n){
   return str
 }
 
-console.log(pattern10(4))
+// console.log(pattern10(4))
+
+function pattern11(n){
+  let str = ''
+  let num = 1
+  for(let i=1;i<=n;i++){
+    if(n%i==0) num = 1
+    else num = 0
+    for(let j=0;j<i;j++ ){
+      str+=num
+      num = 1 - num ;
+    }
+   str+='\n' 
+  }
+  console.log(str)
+}
+
+pattern11(5)
