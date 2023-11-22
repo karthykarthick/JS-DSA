@@ -75,7 +75,17 @@ function pattern7(n) {
 
 function pattern8(n){
     let str = ''
-    
+    for(let i=0;i<n;i++){
+        //spaces
+        for(let j=1;j<=i;j++){
+            console.log(str+=' ')
+        }
+        //star
+        for(let j=0;j<2*n-2*i-1;j++){
+            console.log(str+='*')
+        }
+        console.log(str+='\n')
+    }
 }
 
-pattern7(5);
+pattern8(5);
