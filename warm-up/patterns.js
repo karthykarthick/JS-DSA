@@ -187,4 +187,18 @@ function pattern12(n){
 
   console.log(str)
 } 
-pattern12(5)
+
+function pattern13(n){
+  let str = ''
+  let num = 1
+  for(let i=0;i<=n;i++){
+    for(let j=0;j<i;j++){
+      str+= num 
+      num = num + 1
+    }
+    str+='\n'
+  }
+  console.log(str)
+}
+
+pattern13(5)
