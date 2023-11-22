@@ -223,4 +223,15 @@ function pattern15(n){
   console.log(str)
 }
 
-pattern15(5)
+
+function pattern16(n){
+  let str=''
+  for(let i=0;i<n;i++){
+    for(let j=0;j<=i;j++){
+      str+=String.fromCharCode(65 + i)
+    }
+    str+='\n'
+  }
+  console.log(str)
+}
+pattern16(5)
