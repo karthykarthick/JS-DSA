@@ -162,4 +162,29 @@ function pattern11(n){
   console.log(str)
 }
 
-pattern11(5)
+function pattern12(n){
+  let spaces = 2*n-2
+  let str = ''
+  for(let i=1;i<=n;i++){
+     //num
+     for(let j=1;j<=i;j++){
+      str+=j;
+     }
+
+     //spaces
+     for(let j = 1;j<=spaces;j++){
+       str+=' '
+     }
+
+     //rev num
+     for(let j=i;j>=1;j--){
+      str+=j
+     }
+    str+='\n'
+    spaces -= 2
+  }
+
+
+  console.log(str)
+} 
+pattern12(5)
