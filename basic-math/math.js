@@ -17,4 +17,20 @@ function rev(n){
     }
     return rev
 }
-console.log(rev(911))
+
+function pal(n){
+    let num = n
+    let rev = 0;
+    while(n>0){
+        let last_num = n%10
+        rev = rev * 10 + last_num
+        n = Math.floor(n/10)
+    }
+
+    if(rev == num){
+       return "palindrome"
+    }else {
+        return "Not a palindrome"
+    }
+}
+console.log(pal(121))
