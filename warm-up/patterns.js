@@ -349,6 +349,18 @@ function pattern20(n){
   console.log(str)
 }
 
+function pattern21(n){
+  let str = ''
+  for(let i=0;i<n;i++){
+    for(let j=0;j<n;j++){
+      if(j==n-1||j==0||i==0||i==n-1){
+        str+='*'
+      }else str+=' '
+    }
+    str+='\n'
+  }
+  console.log(str)
+}
 
-pattern20(5)
+pattern21(5)
 
