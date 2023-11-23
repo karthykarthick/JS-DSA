@@ -307,4 +307,48 @@ function pattern19(n){
   }
   return str
 }
-console.log(pattern19(5))
+
+function pattern20(n){
+  let str = ''
+  let space = 2*n-2
+  for(let i=1;i<=n;i++){
+    //num
+    for(let j=1;j<=i;j++){
+         str+='*'
+    }
+    //spaces
+    for(let j=1;j<=space;j++){
+      str+=' '
+    }
+
+    //num
+    for(let j=1;j<=i;j++){
+      str+='*'
+    }
+    str+='\n'
+    space -= 2
+  }
+  
+  let spaces = 2
+  for(let i=0;i<=n-1;i++){
+    //num
+    for(let j=1;j<=n-i-1;j++){
+      str+='*'
+    }
+   //  space
+    for(let j=0;j<spaces;j++){
+      str+=' '
+    }
+ 
+    for(let j=1;j<=n-i-1;j++){
+      str+='*'
+    }
+    str+='\n'
+    spaces +=2
+  }
+  console.log(str)
+}
+
+
+pattern20(5)
+
