@@ -74,4 +74,13 @@ if(res==true && n!==1){
 }else{
     console.log("not a prime number")
 }
-console.log()
+
+function gcd(a,b){
+  while(a>0&&b>0){
+    if(a>b) a =a%b
+    else b=b%a
+  }
+  if(a==0)return b
+  else a
+}
+console.log(gcd(52,10))
