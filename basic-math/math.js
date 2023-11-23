@@ -57,4 +57,21 @@ function div(n){
         }
     }
 }
-console.log(div(36))
+
+function prime(n){
+    for(let i = 2;i<Math.sqrt(n);i++){
+        if(n%i===0){
+            return false
+        }
+    }
+    return true
+
+}
+let n = 12
+let res = prime(n)
+if(res==true && n!==1){
+    console.log("prime number")
+}else{
+    console.log("not a prime number")
+}
+console.log()
