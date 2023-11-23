@@ -8,4 +8,13 @@ function digits(n){
     return count
 }
 
-console.log(digits(12345))
+function rev(n){
+    let rev = 0
+    while(n>0){
+        let last_num = n%10;
+        rev = rev * 10 + last_num;
+        n = Math.floor(n/10)
+    }
+    return rev
+}
+console.log(rev(911))
