@@ -254,4 +254,18 @@ function pattern17(n){
   }
   return str
 }
-console.log(pattern17(5))
+
+function pattern18(n){
+  let str = ''
+  for(let i = 1;i<=n;i++){
+    let char = 'F'
+    for(let j=0;j<i;j++){
+      str+=char
+      char = String.fromCharCode(char.charCodeAt(0)-1)
+    }
+    str+='\n'
+  }
+  return str
+}
+
+console.log(pattern18(6))
