@@ -268,4 +268,43 @@ function pattern18(n){
   return str
 }
 
-console.log(pattern18(6))
+function pattern19(n){
+  let str=''
+  let space = 0;
+  for(let i = 0;i<n;i++){
+    //stat
+    for(let j=0;j<=n-i-1;j++){
+      str+='*'
+    }
+    //spaces
+    for(let j=0;j<space;j++){
+      str+=' '
+    }
+    ///star
+    for(let j=0;j<=n-i-1;j++){
+      str+='*'
+    }
+    space += 2;
+    str+='\n'
+  }
+ 
+  let spaces = 2*n-2
+  for(let i = 0;i<n;i++){
+    //stat
+    for(let j=0;j<=i;j++){
+      str+='*'
+    }
+    //spaces
+    for(let j=0;j<spaces;j++){
+      str+=' '
+    }
+    ///star
+    for(let j=0;j<=i;j++){
+      str+='*'
+    }
+    spaces -= 2;
+    str+='\n'
+  }
+  return str
+}
+console.log(pattern19(5))
