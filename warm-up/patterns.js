@@ -234,4 +234,24 @@ function pattern16(n){
   }
   console.log(str)
 }
-pattern16(5)
+
+function pattern17(n){
+  let str = ''
+  let spaces = n-1
+  for(let i = 0;i<n;i++){
+    //spaces
+    for(let j=0;j<n-i-1;j++){
+      str+=' '
+    }
+    //char
+    let char = 65
+    for(let j=0;j<2*i+1;j++){
+      str+=String.fromCharCode(char)
+      if(j < i) char++
+      else char--  
+    }
+    str+='\n'
+  }
+  return str
+}
+console.log(pattern17(5))
