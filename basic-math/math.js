@@ -33,4 +33,20 @@ function pal(n){
         return "Not a palindrome"
     }
 }
-console.log(pal(121))
+
+function amstrong(n){
+    let org = n
+    let num = 0;
+    while(n>0){
+        let last_num = n%10;
+        num += (last_num * last_num * last_num)
+        n = Math.floor(n/10)
+    }
+    if(num == org){
+        return "Amstrong number"
+    }else{
+        return "not a amstrong number"
+    }
+ 
+}
+console.log(amstrong(170))
