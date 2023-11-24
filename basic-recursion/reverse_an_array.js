@@ -9,6 +9,8 @@ function swap(arr,i,j){
     let temp = arr[i]
     arr[i] = arr[j]
     arr[j] = temp
+   
+     
 }
 
 function print(arr){
@@ -23,3 +25,34 @@ function main(){
 }
 
 main()
+
+// one pointer method
+
+function reverse(arr,i){
+    console.log(arr,i)
+    if(i <arr.length/2){
+        
+        swap(arr,i,arr.length-i-1)
+        reverse(arr,i+1)
+    }
+}
+
+function swap(arr,i,j){
+    let temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+}
+
+function print(arr){
+    for(let i=0;i<arr.length;i++)[
+        console.log(arr[i])
+    ]
+}
+function main(){
+    let arr = [5,4,3,2,1]
+    reverse(arr,0)
+    print(arr)
+}
+
+main()
+
