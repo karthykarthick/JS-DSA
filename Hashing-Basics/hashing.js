@@ -48,7 +48,7 @@ function charhash(arr){
 }
 
 function end(){
-  let arr = ["a","k","a","r","t","h","i","c","k"]
+  let arr = ["A","K","A","R","T","H","I","C","K"]
   charhash(arr)
 }
 
