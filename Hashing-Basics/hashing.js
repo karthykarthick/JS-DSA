@@ -34,3 +34,22 @@ function start() {
 }
 
 start();
+
+// characters
+
+function charhash(arr){
+
+  let hash = {}
+  for(let i=0;i<arr.length;i++){
+    if(hash[arr[i]]) hash[arr[i]]++
+    else hash[arr[i]]=1
+  }
+  console.log(hash)
+}
+
+function end(){
+  let arr = ["a","k","a","r","t","h","i","c","k"]
+  charhash(arr)
+}
+
+end()
