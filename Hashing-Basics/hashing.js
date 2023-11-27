@@ -45,10 +45,25 @@ function charhash(arr){
     else hash[arr[i]]=1
   }
   console.log(hash)
+
+  let minKey = null
+  let maxKey = null
+
+  for(let key in hash){
+    if(minKey === null || hash[key] < hash[minKey]){
+      minKey = key
+    }
+    if(maxKey === null || hash[key]>hash[maxKey]){
+      maxKey = key
+    }
+  }
+  console.log(maxKey,minKey)
 }
 
+
+
 function end(){
-  let arr = ["A","K","A","R","T","H","I","C","K"]
+  let arr = [2,2,3,4,4,2]
   charhash(arr)
 }
 
